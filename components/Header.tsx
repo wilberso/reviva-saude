@@ -1,114 +1,123 @@
 "use client";
 
-import Image from "next/image";
-
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 shadow-sm z-50">
+    <header className="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm z-50">
 
-      {/* 🔹 BARRA SUPERIOR – PALETA REVIVA */}
-      <div className="bg-gradient-to-r from-teal-700 to-teal-600 text-white text-[12px] md:text-xs">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
+     {/* 🔹 BARRA SUPERIOR – PALETA REVIVA COM MEDALHA */}
+<div className="bg-gradient-to-r from-teal-700 to-teal-600 text-white text-[12px] md:text-xs">
+  <div className="max-w-7xl mx-auto px-6 py-2 flex flex-col md:flex-row items-center justify-between gap-3">
 
-          {/* ENDEREÇO */}
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Quadra+44+Loja+06+Setor+Leste+Gama+DF"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:opacity-90 transition"
-          >
-            <svg className="w-4 h-4 opacity-80" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round"
-                d="M12 21s-6-5.4-6-10a6 6 0 1112 0c0 4.6-6 10-6 10z"/>
-              <circle cx="12" cy="11" r="2"/>
-            </svg>
-            Quadra 44 - Loja 06 - Gama/DF
-          </a>
+    {/* ESQUERDA – MEDALHA + ENDEREÇO */}
+    <div className="flex items-center gap-4">
 
-          {/* CONTATOS */}
-          <div className="flex items-center gap-6">
+      {/* 🏅 Medalha Dourada Discreta */}
+      <div className="flex items-center gap-2 bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 text-white px-3 py-[3px] rounded-full text-[10px] font-semibold shadow-sm">
+        
+        <svg
+          className="w-3.5 h-3.5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M12 2l3 6 6 .9-4.5 4.4 1 6-5.5-3-5.5 3 1-6L3 8.9 9 8z" />
+        </svg>
 
-            <a
-              href="tel:+5561998701506"
-              className="flex items-center gap-2 hover:opacity-90 transition"
-            >
-              <svg className="w-4 h-4 opacity-80" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round"
-                  d="M3 5a2 2 0 012-2h3l2 5-2 1a11 11 0 005 5l1-2 5 2v3a2 2 0 01-2 2A16 16 0 013 5z"/>
-              </svg>
-              (61) 99870-1506
-            </a>
-
-            <a
-              href="https://www.instagram.com/reviva_saudegama/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:opacity-90 transition"
-            >
-              <svg className="w-4 h-4 opacity-80" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
-                <rect x="2" y="2" width="20" height="20" rx="5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="17.5" cy="6.5" r="1.5"/>
-              </svg>
-              @reviva_saudegama
-            </a>
-
-          </div>
-        </div>
+        Excelência em Atendimento
       </div>
 
-      {/* 🔹 BARRA PRINCIPAL */}
-      <div className="max-w-7xl mx-auto px-4 md:px-6 py-5 flex items-center justify-between">
+      {/* Endereço */}
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Quadra+44+Loja+06+Setor+Leste+Gama+DF"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hidden md:block hover:opacity-90 transition"
+      >
+        Quadra 44 • Loja 06 • Gama – DF
+      </a>
 
-        {/* LOGO + DESKTOP */}
-        <div className="flex items-center gap-3">
-          <Image
-            src="/logo4.png"
-            alt="Reviva Saúde"
-            width={60}
-            height={60}
-            className="object-contain"
-          />
+    </div>
+
+    {/* DIREITA – CONTATOS */}
+    <div className="flex items-center gap-6">
+
+      <a
+        href="tel:+5561998701506"
+        className="hover:opacity-90 transition"
+      >
+        (61) 99870-1506
+      </a>
+
+      <a
+        href="https://www.instagram.com/reviva_saudegama/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:opacity-90 transition"
+      >
+        @reviva_saudegama
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
+
+      {/* ===== BARRA PRINCIPAL ===== */}
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-4">
+
+        {/* MOBILE CENTRALIZADO */}
+        <div className="flex flex-col md:hidden items-center justify-center gap-3 text-center">        
+
+          <nav className="flex items-center justify-center gap-6 text-sm font-medium text-gray-600">
+            <a href="#especialidades" className="hover:text-teal-700 transition">
+              Especialidades
+            </a>
+            <a href="#emagrecimento" className="hover:text-teal-700 transition">
+              Emagrecimento
+            </a>
+            <a href="#destaques" className="hover:text-teal-700 transition">
+              Destaques
+            </a>
+            <a href="#contato" className="hover:text-teal-700 transition">
+              Contato
+            </a>
+          </nav>
+
         </div>
 
-        {/* MENU DESKTOP */}
-        <div className="hidden md:flex items-center gap-10">
+        {/* DESKTOP (inalterado) */}
+        <div className="hidden md:flex items-center justify-between">
 
-          <nav className="flex items-center gap-8 text-sm font-medium text-gray-600">
-            {["Especialidades", "Emagrecimento", "Destaques", "Contato"].map(
-              (item, index) => (
-                <a
-                  key={index}
-                  href={`#${item.toLowerCase()}`}
-                  className="relative group transition"
-                >
-                  <span className="group-hover:text-teal-700 transition">
-                    {item}
-                  </span>
-                  <span className="absolute left-0 -bottom-2 w-0 h-[2px] bg-teal-600 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              )
-            )}
+          <div className="text-xl font-semibold text-teal-800 tracking-wide">
+            Reviva Saúde
+          </div>
+
+          <nav className="flex items-center gap-10 text-sm font-medium text-gray-600">
+            <a href="#especialidades" className="hover:text-teal-700 transition">
+              Especialidades
+            </a>
+            <a href="#emagrecimento" className="hover:text-teal-700 transition">
+              Emagrecimento
+            </a>
+            <a href="#destaques" className="hover:text-teal-700 transition">
+              Destaques
+            </a>
+            <a href="#contato" className="hover:text-teal-700 transition">
+              Contato
+            </a>
           </nav>
 
           <a
             href="https://wa.me/5561998701506"
             target="_blank"
-            className="bg-teal-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-teal-700 transition"
+            rel="noopener noreferrer"
+            className="bg-teal-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-teal-700 transition"
           >
-            Agendar consulta
+            Agendar
           </a>
-        </div>
 
-        {/* FRASE MOBILE */}
-        <div className="md:hidden text-right">
-          <p className="text-sm font-semibold text-teal-700">
-            Cuidando da sua saúde com excelência e humanização
-          </p>
         </div>
-
       </div>
-
     </header>
   );
 }

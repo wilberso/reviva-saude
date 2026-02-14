@@ -26,7 +26,7 @@ export default function Cards() {
 
   return (
     <section
-      id="destaque"
+      id="destaques"
       className="relative bg-gradient-to-b from-teal-50 to-white pt-10 pb-16"
     >
       <div className="max-w-7xl mx-auto px-4 md:px-6">
