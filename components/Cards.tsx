@@ -4,22 +4,22 @@ export default function Cards() {
   const cards = [
     {
       title: "Especialidades",
-      img: "/novosconvenios.jpg",
+      img: "/especialidades.jpg",
       desc: "Consultas adultas e infantis com diversas especialidades médicas."
     },
     {
       title: "Procedimentos",
-      img: "/endocrino.jpg",
+      img: "/procedimentos.jpg",
       desc: "Ecografias, infiltrações e tratamentos avançados."
     },
     {
       title: "Tratamentos",
-      img: "/carbox.jpg",
+      img: "/tratamentos.jpg",
       desc: "Emagrecimento e estética com acompanhamento especializado."
     },
     {
       title: "Dermatologia",
-      img: "/dermatologista.jpg",
+      img: "/dermatologia.jpg",
       desc: "Cuidados completos para saúde e estética da sua pele."
     } 
   ];

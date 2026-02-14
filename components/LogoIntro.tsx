@@ -8,7 +8,7 @@ export default function LogoIntro() {
 
   useEffect(() => {
     const t1 = setTimeout(() => setPhase("gold"), 1200);
-    const t2 = setTimeout(() => setPhase("hide"), 3600);
+    const t2 = setTimeout(() => setPhase("hide"), 3000);
 
     return () => {
       clearTimeout(t1);

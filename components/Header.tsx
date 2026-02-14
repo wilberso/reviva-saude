@@ -10,37 +10,62 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 shadow-sm z-50">
 
-      {/* ===== BARRA SUPERIOR ===== */}
-      <div className="bg-teal-700 text-white text-[11px] md:text-xs py-2">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-2">
+    {/* 🔹 BARRA SUPERIOR – HOSPITAL INTERNACIONAL (PALETA REVIVA) */}
+<div className="bg-gradient-to-r from-teal-700 to-teal-600 text-white text-[12px] md:text-xs">
+  <div className="max-w-7xl mx-auto px-6 py-2 flex flex-col md:flex-row items-center justify-between gap-3">
 
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Quadra+44+Loja+06+Setor+Leste+Gama+DF"
-            target="_blank"
-            className="hover:opacity-90 transition"
-          >
-            Quadra 44, Loja 06 • Gama – DF
-          </a>
+    {/* ENDEREÇO */}
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Quadra+44+Loja+06+Setor+Leste+Gama+DF"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 hover:opacity-90 transition"
+    >
+      <svg className="w-4 h-4 opacity-80" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round"
+          d="M12 21s-6-5.4-6-10a6 6 0 1112 0c0 4.6-6 10-6 10z"/>
+        <circle cx="12" cy="11" r="2"/>
+      </svg>
+      <span className="hidden sm:inline">
+        Quadra 44, Loja 06 • Setor Leste • Gama – DF
+      </span>
+      <span className="sm:hidden">Gama – DF</span>
+    </a>
 
-          <div className="flex items-center gap-5">
-            <a
-              href="https://wa.me/5561998701506"
-              target="_blank"
-              className="hover:opacity-90 transition"
-            >
-              (61) 99870-1506
-            </a>
+    {/* CONTATOS */}
+    <div className="flex items-center gap-6">
 
-            <a
-              href="https://www.instagram.com/reviva_saudegama/"
-              target="_blank"
-              className="hover:opacity-90 transition"
-            >
-              @reviva_saudegama
-            </a>
-          </div>
-        </div>
-      </div>
+      {/* TELEFONE */}
+      <a
+        href="tel:+5561998701506"
+        className="flex items-center gap-2 hover:opacity-90 transition"
+      >
+        <svg className="w-4 h-4 opacity-80" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="M3 5a2 2 0 012-2h3l2 5-2 1a11 11 0 005 5l1-2 5 2v3a2 2 0 01-2 2A16 16 0 013 5z"/>
+        </svg>
+        (61) 99870-1506
+      </a>
+
+      {/* INSTAGRAM */}
+      <a
+        href="https://www.instagram.com/reviva_saudegama/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 hover:opacity-90 transition"
+      >
+        <svg className="w-4 h-4 opacity-80" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1.5"/>
+        </svg>
+        @reviva_saudegama
+      </a>
+
+    </div>
+  </div>
+</div>
+
 
       {/* ===== BARRA PRINCIPAL ===== */}
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-5 flex items-center justify-between">

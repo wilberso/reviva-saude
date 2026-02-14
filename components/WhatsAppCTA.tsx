@@ -2,9 +2,9 @@ import Image from "next/image";
 export default function WhatsAppCTA() {
   return (
     <section
-      id="contato"
-      className="relative py-28 px-4 md:px-6 bg-slate-50 overflow-hidden"
-    >
+  id="contato"
+  className="pt-16 pb-12 md:pt-20 md:pb-16 px-6 bg-gradient-to-r from-teal-600 to-teal-700 text-white text-center"
+>
       {/* DECORAÇÃO SUAVE */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-teal-100 blur-3xl rounded-full opacity-40 -z-10" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-50 blur-3xl rounded-full opacity-40 -z-10" />
