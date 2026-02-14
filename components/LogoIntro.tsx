@@ -25,7 +25,7 @@ export default function LogoIntro() {
 
         {/* Logo Azul */}
         <Image
-          src="/logo4.png"
+          src="/logo4.png" 
           alt="Reviva Saúde"
           width={320}
           height={320}

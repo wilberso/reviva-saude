@@ -24,7 +24,7 @@ export default function Hero() {
     <div className="absolute inset-0 pointer-events-none">
       <div className="shine-effect" />
     </div>
-
+  
     <Image
       src="/logo4.png"
       alt="Reviva Saúde"

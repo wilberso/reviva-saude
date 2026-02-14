@@ -24,6 +24,6 @@ export default function WhatsAppFloat() {
         height={26}
         priority
       />
-    </a>
+    </a> 
   );
 }
