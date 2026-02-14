@@ -47,7 +47,7 @@ export default function Header() {
             priority
           />
 
-          <div className="hidden md:block max-w-md">
+          <div className="hidden lg:block max-w-md">
             <p className="text-base font-semibold text-teal-700 leading-snug">
               Clínica multidisciplinar com atendimento humanizado cuidando da sua saúde física e emocional.
             </p>
@@ -77,7 +77,7 @@ export default function Header() {
             href="https://wa.me/5561998701506"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-teal-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-teal-700 transition"
+            className="bg-teal-600 text-white px-4 py-2 rounded-full text-xs md:text-sm font-semibold"
           >
             Agendar consulta
           </a>

@@ -3,10 +3,11 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 pt-32 pb-24">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 pt-28 md:pt-32 pb-16 md:pb-24">
+
 
       {/* BLOCO SUPERIOR: IMAGEM + TEXO */}
-<div className="grid md:grid-cols-2 gap-6 items-center mb-16">
+<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
 
   {/* ESQUERDA: IMAGEM */}
   <div className="flex justify-end md:justify-center">
@@ -26,7 +27,7 @@ export default function Hero() {
       Clínica Multidisciplinar • Gama – DF
     </span>
 
-    <h1 className="text-4xl md:text-5xl font-bold text-teal-700 leading-tight mb-6">
+    <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-teal-700 leading-tight mb-6">
       Saúde física, mental e bem-estar
       <br />
       em um só lugar
@@ -57,7 +58,7 @@ export default function Hero() {
 
 
         {/* CAIXAS INFERIORES */}
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
 
           {/* ESPECIALIDADES */}
           <div className="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition">

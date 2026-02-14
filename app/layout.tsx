@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className="pt-28 flex flex-col min-h-screen">
+      <body className="pt-28 md:pt-40">
         <Header />
 
         {/* Conteúdo principal */}
