@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Emagrecimento() {
   return (
-    <section className="bg-white py-24">
+    <section id="emagrecimento" className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
         {/* IMAGEM */}

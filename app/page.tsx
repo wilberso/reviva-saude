@@ -5,13 +5,14 @@ import Diferenciais from "../components/Diferenciais";
 import WhatsAppCTA from "../components/WhatsAppCTA";
 import Emagrecimento from "../components/Emagrecimento";
 import Servicos from "../components/Servicos";
+import Cards from "../components/Cards";
 
 export default function Home() {
   return (
     <main className="bg-background text-text">
       <Hero />
       <Servicos />
-    
+      <Cards />
       <Emagrecimento />            
       <Diferenciais />
       <WhatsAppCTA />
