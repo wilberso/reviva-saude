@@ -123,18 +123,7 @@ export default function WhatsAppCTA() {
             </p>
           </div>
 
-        </div>
-
-        {/* MAPA EMBUTIDO PREMIUM */}
-        <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-200">
-          <iframe
-            src="https://www.google.com/maps?q=Quadra+44,+Loja+06,+Setor+Leste,+Gama,+DF&output=embed"
-            width="100%"
-            height="420"
-            style={{ border: 0 }}
-            loading="lazy"
-          ></iframe>
-        </div>
+        </div> 
 
       </div>
     </section>
