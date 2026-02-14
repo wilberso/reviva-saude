@@ -1,16 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
 
 export default function Header() {
-  const [open, setOpen] = useState(false);
-
   return (
     <header className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-xl border-b border-gray-100 shadow-sm z-50">
 
-      {/* 🔹 BARRA SUPERIOR – SEMPRE VISÍVEL (DESKTOP + MOBILE) */}
+      {/* 🔹 BARRA SUPERIOR – PALETA REVIVA */}
       <div className="bg-gradient-to-r from-teal-700 to-teal-600 text-white text-[12px] md:text-xs">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
 
@@ -61,10 +57,10 @@ export default function Header() {
         </div>
       </div>
 
-      {/* 🔹 BARRA PRINCIPAL – SOMENTE DESKTOP */}
-      <div className="hidden md:flex max-w-7xl mx-auto px-6 py-5 items-center justify-between">
+      {/* 🔹 BARRA PRINCIPAL */}
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-5 flex items-center justify-between">
 
-        {/* LOGO */}
+        {/* LOGO + DESKTOP */}
         <div className="flex items-center gap-3">
           <Image
             src="/logo4.png"
@@ -73,15 +69,10 @@ export default function Header() {
             height={60}
             className="object-contain"
           />
-          <div className="leading-tight">
-            <p className="text-[11px] text-gray-400 tracking-widest uppercase">
-              Excelência em cuidado integral
-            </p>
-          </div>
         </div>
 
         {/* MENU DESKTOP */}
-        <div className="flex items-center gap-10">
+        <div className="hidden md:flex items-center gap-10">
 
           <nav className="flex items-center gap-8 text-sm font-medium text-gray-600">
             {["Especialidades", "Emagrecimento", "Destaques", "Contato"].map(
@@ -94,7 +85,7 @@ export default function Header() {
                   <span className="group-hover:text-teal-700 transition">
                     {item}
                   </span>
-                  <span className="absolute left-0 -bottom-2 w-0 h-[2px] bg-gradient-to-r from-teal-600 to-emerald-400 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute left-0 -bottom-2 w-0 h-[2px] bg-teal-600 transition-all duration-300 group-hover:w-full"></span>
                 </a>
               )
             )}
@@ -103,12 +94,19 @@ export default function Header() {
           <a
             href="https://wa.me/5561998701506"
             target="_blank"
-            className="bg-gradient-to-r from-teal-600 to-emerald-500 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition"
+            className="bg-teal-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-teal-700 transition"
           >
             Agendar consulta
           </a>
-
         </div>
+
+        {/* FRASE MOBILE */}
+        <div className="md:hidden text-right">
+          <p className="text-sm font-semibold text-teal-700">
+            Cuidando da sua saúde com excelência e humanização
+          </p>
+        </div>
+
       </div>
 
     </header>
