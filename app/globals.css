@@ -1,3 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.delay-150 {
+  animation-delay: 0.15s;
+}
+
+/* ====== SHINE LUXURY EFFECT ====== */
+
+.shine-effect {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    rgba(255,255,255,0.6) 50%,
+    transparent 60%
+  );
+  transform: rotate(25deg);
+  animation: shineMove 4s ease-in-out infinite;
+}
+
+@keyframes shineMove {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  50% {
+    transform: translateX(100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(25deg);
+  }
+}
+
+@keyframes goldShine {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.4);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.animate-goldShine {
+  animation: goldShine 2s ease-in-out infinite;
+}

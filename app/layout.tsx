@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsAppFloat from "../components/WhatsAppFloat";
+import LogoIntro from "@/components/LogoIntro";
 
 
 export const metadata = {
@@ -18,7 +19,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className="pt-24 md:pt-28">
         <Header />
-
+<LogoIntro />
         {/* Conteúdo principal */}
         <main className="flex-1">
           {children}
