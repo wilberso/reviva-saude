@@ -28,8 +28,7 @@ export default function Header() {
       </svg>
       <span className="hidden sm:inline">
         Quadra 44, Loja 06 • Setor Leste • Gama – DF
-      </span>
-      <span className="sm:hidden">Gama – DF</span>
+      </span>      
     </a>
 
     {/* CONTATOS */}
