@@ -18,7 +18,7 @@ export default function WhatsAppFloat() {
       "
     >
       <Image
-        src="/whatsapp.svg"
+        src="/whatsapp.png"
         alt="WhatsApp"
         width={26}
         height={26}
