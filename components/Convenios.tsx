@@ -8,7 +8,7 @@ export default function Convenios() {
       <p className="text-center max-w-2xl mx-auto mb-8">
         Atendemos mais de <strong>50 convênios</strong>.  
         Entre em contato para confirmar a cobertura do seu plano.
-      </p>
+      </p> 
 
       <div className="text-center">
         <a

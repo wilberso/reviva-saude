@@ -21,7 +21,7 @@ export default function Cards() {
       title: "Dermatologia",
       img: "/dermatologista.jpg",
       desc: "Cuidados completos para saúde e estética da sua pele."
-    }
+    } 
   ];
 
   return (
