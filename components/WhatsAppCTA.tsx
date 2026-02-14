@@ -121,7 +121,7 @@ export default function WhatsAppCTA() {
             <p className="text-xs text-slate-500 mt-2">
               Atendimento mediante agendamento
             </p>
-          </div>
+          </div> 
 
         </div> 
 
