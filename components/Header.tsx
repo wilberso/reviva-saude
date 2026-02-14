@@ -26,8 +26,8 @@ export default function Header() {
           d="M12 21s-6-5.4-6-10a6 6 0 1112 0c0 4.6-6 10-6 10z"/>
         <circle cx="12" cy="11" r="2"/>
       </svg>
-      <span className="hidden sm:inline">
-        Quadra 44, Loja 06 • Setor Leste • Gama – DF
+      <span >
+        Quadra 44 - Loja 06 - Setor Leste - Gama/DF
       </span>      
     </a>
 
